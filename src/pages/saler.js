@@ -1,7 +1,8 @@
 import React, {Component} from 'react';
 import Massage from "./Massage";
 import {api_host} from "../const";
-
+import SalerCarList from "./SalerCarList";
+//'id/19'
 class saler extends Component {
     constructor (props){
         super(props);
@@ -14,8 +15,9 @@ class saler extends Component {
     render() {
         return (
             <div>
-                <h1>Page2</h1>
-                <Massage toUser={'Salesman'} getUserBy={'id/18'}/>
+                <h1>saler</h1>
+                <Massage toUser={'Customer'} getUserBy={'profile'}/>
+                <SalerCarList forSaler={false}/>
             </div>
         );
     }
