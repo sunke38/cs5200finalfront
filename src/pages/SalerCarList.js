@@ -17,7 +17,7 @@ class SalerCarList extends Component {
     componentDidMount() {
         const api_self= '/api/user/profile'
         const fake_self='/api/salesman/id/19'
-        fetch(`${api_host}${fake_self}`)
+        fetch(`${api_host}${api_self}`)
             .then((response)=>  {
                 return response.json();
             })
